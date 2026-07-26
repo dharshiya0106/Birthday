@@ -384,14 +384,10 @@ to{
 
 
 .photo{
-    width:320px;
-    max-width:90%;
+    width:230px;
     height:auto;
-    display:block;
-    margin:auto;
-    border-radius:25px;
-    border:5px solid #38bdf8;
-    box-shadow:0 0 40px #38bdf8;
+    max-width:90%;
+    object-fit:contain;
 }
 
 
