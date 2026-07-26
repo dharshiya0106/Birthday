@@ -916,3 +916,21 @@ to{
     }
 
 }
+#giftBox{
+    font-size:70px;
+    margin-top:20px;
+    cursor:pointer;
+    transition:.4s;
+}
+
+#giftBox:hover{
+    transform:scale(1.15) rotate(10deg);
+}
+
+#giftMessage{
+    margin-top:15px;
+    font-size:20px;
+    color:#facc15;
+    font-weight:bold;
+    display:none;
+}
