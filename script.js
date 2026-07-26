@@ -16,9 +16,15 @@ function openPage(pageId){
         page.classList.remove("active");
     });
 
-    document.getElementById(pageId).classList.add("active");
+    const page = document.getElementById(pageId);
+    page.classList.add("active");
 
-    // Birthday animation
+    // 🔥 Always go to top
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+
     if(pageId==="birthday"){
 
         birthdayElement.innerHTML="";
@@ -26,7 +32,10 @@ function openPage(pageId){
         typeBirthday();
 
         startConfetti();
+    }
 
+    if(pageId==="final"){
+        startFireworks();
     }
 
 }
@@ -425,14 +434,13 @@ function blowCandle(){
     `;
 
     startFireworks();
-
     startConfetti();
 
     setTimeout(()=>{
 
         openPage("final");
 
-    },4000);
+    },2500);
 
 }
 
