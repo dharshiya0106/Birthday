@@ -934,15 +934,10 @@ to{
     font-weight:bold;
     display:none;
 }
-/* 📱 Mobile Cake Page Fix */
-
-#cakePage{
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding:20px;
+#cakePage .card{
+    width:90%;
+    max-width:500px;
+    padding:30px;
 }
 
 #cakePage h1{
@@ -950,34 +945,35 @@ to{
 }
 
 #cakePage h2{
-    font-size:26px;
-    margin-top:10px;
+    font-size:24px;
+    margin:10px 0;
 }
 
 #cakePage p{
-    margin:15px 0;
     font-size:18px;
-    line-height:1.6;
+    margin:15px 0 25px;
 }
 
 @media (max-width:600px){
 
+    #cakePage .card{
+        padding:20px;
+    }
+
     #cakePage h1{
-        font-size:26px;
+        font-size:24px;
     }
 
     #cakePage h2{
-        font-size:22px;
+        font-size:20px;
     }
 
     #cakePage p{
         font-size:16px;
-        margin:10px 20px;
     }
 
     .cakeBox{
         transform:scale(0.8);
-        margin-top:20px;
     }
 
 }
