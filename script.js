@@ -648,3 +648,16 @@ setInterval(() => {
     }
 
 }, 3000);
+const giftBox = document.getElementById("giftBox");
+const giftMessage = document.getElementById("giftMessage");
+
+giftBox.addEventListener("click", () => {
+
+    giftBox.innerHTML = "💙";
+
+    giftMessage.style.display = "block";
+
+    giftMessage.innerHTML =
+    "🎁 My biggest gift is our friendship. Happy Birthday Tower! 🗼❤️";
+
+});
